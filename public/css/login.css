@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* Warna latar belakang */
+}
+
+.form-container {
+    width: 400px; /* Lebar kontainer */
+    margin: 100px auto; /* Pusatkan kontainer secara vertikal dan horizontal */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* Warna latar belakang kontainer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+}
+
+h1 {
+    text-align: center; /* Pusatkan teks judul */
+}
+
+label {
+    display: block; 
+    margin-top: 10px; /* Ruang antara label dan input */
+}
+
+input, select {
+    width: 98%; /* Lebar penuh input */
+    padding: 10px; /* Padding input */
+    margin-top: 5px; /* Ruang di atas input */
+    border: 1px solid #ccc; /* Batas input */
+    border-radius: 4px; /* Sudut melengkung input */
+}
+
+button {
+    background-color: #4CAF50; /* Warna tombol */
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    margin-top: 20px;
+    border-radius: 4px; /* Sudut melengkung tombol */
+    width: 100%; /* Lebar penuh tombol */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna saat hover pada tombol */
+}
+
+p {
+    text-align: center; /* Pusatkan teks di bawah tombol */
+}
+
+p a {
+    color: #4CAF50; /* Warna tautan */
+    text-decoration: none; /* Tanpa garis bawah pada tautan */
+}
+
+p a:hover {
+    text-decoration: underline; /* Garis bawah saat hover pada tautan */
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif; /* Set font untuk seluruh halaman */
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+.container {
+    width: 90%; /* Lebar kontainer */
+    max-width: 600px; /* Lebar maksimum untuk form */
+    margin: 20px auto; /* Center kontainer */
+    padding: 20px; /* Ruang dalam kontainer */
+    background-color: white; /* Latar belakang putih */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk kontainer */
+}
+
+h1 {
+    text-align: center; /* Pusatkan teks judul */
+    color: #333; /* Warna teks judul */
+}
+
+label {
+    display: block; /* Buat label menjadi blok */
+    margin: 10px 0 5px; /* Margin untuk penempatan */
+}
+
+input,
+textarea,
+select {
+    width: 96%; /* Lebar penuh untuk semua input */
+    padding: 10px; /* Ruang dalam untuk input */
+    margin-bottom: 15px; /* Margin bawah */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 4px; /* Sudut membulat */
+}
+
+button {
+    width: 100%; /* Lebar penuh untuk tombol */
+    padding: 10px; /* Ruang dalam untuk tombol */
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa garis tepi */
+    border-radius: 5px; /* Sudut membulat tombol */
+    cursor: pointer; /* Ubah kursor untuk menunjukkan interaktivitas */
+    font-size: 16px; /* Ukuran font tombol */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+a{
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    color: #45a049;
+}
+
+a:hover {
+    color: white;
+    background-color: #000000; /* Warna saat hover */
+}

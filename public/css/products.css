@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Mengatur arah menjadi kolom */
+    align-items: center; /* Menjaga teks berada di tengah secara horizontal */
+    text-align: center; /* Memastikan teks juga berada di pusat secara horizontal */
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 0.5rem;
+    flex-grow: 1; /* Memungkinkan navigasi mengisi ruang */
+}
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+.profile-logo img {
+    margin-left: auto; /* Push the logo to the right */
+}
+
+/* CSS untuk dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent; /* Transparent for the button */
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat hover */
+}
+
+.profile-dropdown:hover .dropbtn {
+    background-color: #ddd; /* Ganti warna button saat hover */
+}
+
+
+.container {
+    width: 90%; /* Lebar kontainer */
+    max-width: 1200px; /* Lebar maksimum */
+    margin: 20px auto; /* Center kontainer */
+    padding: 20px; /* Ruang dalam untuk kontainer */
+    background: white; /* Latar belakang putih */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #333; /* Warna teks judul */
+}
+
+/* Grid produk */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Jarak antar kartu */
+}
+
+/* Kartu produk */
+.product-card {
+    background: white; /* Latar belakang putih untuk kartu */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 10px; /* Sudut membulat */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: transform 0.2s; /* Efek transisi */
+}
+
+/* Efek hover pada kartu produk */
+.product-card:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat dihover */
+}
+
+/* Gaya untuk gambar produk */
+.product-card img {
+    max-width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    border-radius: 8px; /* Sudut membulat pada gambar */
+}
+
+/* Teks dalam kartu produk */
+.product-card h2 {
+    font-size: 1.5rem; /* Ukuran teks judul */
+    color: #2c3e50; /* Warna teks judul */
+    margin: 10px 0; /* Margin atas dan bawah */
+}
+
+.product-card p {
+    color: #666; /* Warna teks deskripsi dan harga */
+}
+
+/* Gaya untuk link detail */
+.details-link {
+    display: inline-block; /* Menjadikan link sebagai block */
+    margin-top: 10px; /* Margin atas */
+    padding: 10px 15px; /* Padding dalam */
+    background-color: #007bff; /* Warna latar belakang biru */
+    color: white; /* Warna teks putih */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s; /* Efek transisi untuk warna */
+}
+
+/* Efek hover pada link detail */
+.details-link:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat dihover */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button */
+}
+
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    text-align: center; /* Centered text */
+}
+
+/* Specific styles for the Edit button */
+.edit-btn {
+    background-color: #007bff; /* Blue background for the Edit button */
+}
+
+/* Specific styles for the Delete button */
+.delete-btn {
+    background-color: #d9534f; /* Red background for the Delete button */
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+}
+
+.edit-btn:hover {
+    background-color: #0056b3; /* Darker blue for edit button hover */
+}
+
+.delete-btn:hover {
+    background-color: #c9302c; /* Darker red for delete button hover */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are collapsed for a cleaner look */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add a light gray border */
+}
+
+th {
+    background-color: #4CAF50; /* Background for the header */
+    color: white; /* Header text color */
+}
+
+td {
+    background-color: white; /* Table cell background color */
+}
+
+img {
+    max-width: 100px; /* Maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+}

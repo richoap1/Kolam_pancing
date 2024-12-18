@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex; /* Menggunakan Flexbox untuk layout */
+    justify-content: center; /* Memusatkan item navigasi */
+    align-items: center; /* Menjaga isi berada di tengah */
+    background-color: #333;
+    padding: 0.5rem;
+    flex-wrap: wrap; /* Agar item berpindah ke baris baru jika ruang terbatas */
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem 1rem; /* Jarak antar item */
+    text-decoration: none;
+    margin: 0 10px; /* Jarak antar link */
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Efek saat hover */
+}
+
+/* CSS untuk Dropdown */
+.profile-dropdown {
+    position: relative;  /* Mengatur posisi dropdown */
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent; /* Transparan untuk tombol */
+    border: none; /* Tidak ada batas */
+    cursor: pointer; 
+}
+
+.dropdown-content {
+    display: none; /* Sembunyikan konten dropdown */
+    position: absolute; 
+    background-color: #f9f9f9; /* Background untuk dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Efek hover untuk item dropdown */
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat hover pada div */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Jarak tengah pada form */
+    padding: 20px;
+    background: white; 
+    border-radius: 8px; /* Sudut melengkung untuk kontainer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan pada kontainer */
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    text-align: center; /* Pusatkan judul */
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+/* Gaya untuk Form Pemesanan */
+form {
+    margin: 20px auto; 
+    background-color: #f9f9f9; /* Warna latar belakang form */
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan pada form */
+}
+
+form label {
+    display: block; /* Membuat label menjadi blok */
+    margin: 10px 0;
+}
+
+form input, 
+form select {
+    width: 98%; /* Lebar penuh untuk input dan select */
+    padding: 10px; /* Padding untuk input dan select */
+    margin-bottom: 15px; /* Jarak bawah */
+    border: 1px solid #ccc; /* Batas untuk input */
+    border-radius: 4px; /* Sudut melengkung untuk input */
+}
+
+form button {
+    background-color: #4CAF50; /* Warna tombol */
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 4px; /* Sudut melengkung tombol */
+    width: 100%; /* Lebar penuh tombol */
+}
+
+form button:hover {
+    background-color: #45a049; /* Efek saat hover */
+}
+
+/* Gaya untuk opsi tambahan */
+.additional-options {
+    display: none; /* Sembunyikan opsi tambahan secara default */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Konfigurasi untuk tombol kembali */
+.back-button {
+    text-align: center; /* Pusatkan teks dalam tombol */
+    margin-top: 20px; /* Beri jarak dari konten sebelumnya */
+}
+
+.back-button a {
+    display: inline-block; /* Pastikan tombol menjadi blok untuk padding */
+    background-color: #4CAF50; /* Warna latar tombol */
+    color: white; 
+    padding: 10px 15px; /* Ukuran tombol */
+    text-decoration: none; /* Hilangkan garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: background-color 0.3s ease; /* Transisi saat hover */
+}
+
+.back-button a:hover {
+    background-color: #45a049; /* Lebih gelap saat hover */
+}

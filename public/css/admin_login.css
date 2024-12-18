@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+.form-container {
+    width: 300px; /* Lebar wadah form */
+    margin: 0 auto; /* Center form */
+    padding: 20px;
+    background: white; /* Latar belakang putih untuk form */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+h1 {
+    text-align: center; /* Pusatkan teks */
+}
+
+label {
+    display: block; /* Buat label menjadi blok */
+    margin: 10px 0 5px; /* Margin untuk penempatan */
+}
+
+input {
+    width: 98%; /* Lebar penuh */
+    padding: 10px; /* Ruang dalam */
+    margin-bottom: 15px; /* Margin bawah */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 4px; /* Sudut membulat */
+}
+
+button {
+    width: 100%; /* Lebar penuh untuk tombol */
+    padding: 10px; /* Ruang dalam */
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tidak ada garis batas */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+}
+
+p {
+    text-align: center; /* Pusatkan teks paragraf */
+}
